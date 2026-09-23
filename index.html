@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurudeen Ishola | Portfolio</title>
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="greeting">Hi, I'm</p>
+            <h1>Nurudeen Ishola</h1>
+            <h3 class="role">Computer Engineering Student</h3>
+            <p class="description">
+                I build responsive and user-friendly websites using HTML, CSS, and a little bit of creativity.
+            </p>
+            <div class="btn-group">
+                <a href="https://github.com/nurudeenaishola-spec" target="_blank" class="btn btn-primary">
+    GitHub Profile <i class="fa-brands fa-github"></i>
+</a>
+                <a href="mailto:nurudeenaishola@gmail.com" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="myself.jpg" alt="Nurudeen Ishola">
+        </div>
+    </section>
+    <!-- 3. ABOUT ME & SKILLS SECTION -->
+    <section class="about-skills-container" id="about">
+        
+        <!-- LEFT SIDE: ABOUT ME -->
+        <div class="about-box">
+            <h2><i class="fa-solid fa-user icon"></i> About Me</h2>
+            <div class="about-card">
+                <img src="Workspace.jpg" alt="Workspace" class="about-img">
+                <p>
+                    I'm a passionate Computer Engineering student who loves to create beautiful and functional websites. I enjoy turning ideas into real-world projects. My goal is to build software products that make a difference.
+                </p>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: SKILLS CARDS -->
+        <div class="skills-box" id="skills">
+            <h2><i class="fa-solid fa-code icon"></i> Skills</h2>
+            <div class="skills-grid">
+                
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+                    <h4>HTML</h4>
+                    <span class="percentage">90%</span>
+                    <div class="progress-bar">
+                        <div class="progress fill-html"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+                    <h4>CSS</h4>
+                    <span class="percentage">85%</span>
+                    <div class="progress-bar">
+                        <div class="progress fill-css"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-js skill-icon js-icon"></i>
+                    <h4>JavaScript</h4>
+                    <span class="percentage">70%</span>
+                    <div class="progress-bar">
+                        <div class="progress fill-js"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-python skill-icon python-icon"></i>
+                    <h4>Python</h4>
+                    <span class="percentage">75%</span>
+                    <div class="progress-bar">
+                        <div class="progress fill-python"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- 4. EDUCATION, PROJECTS & CONTACT SECTION -->
+    <section class="bottom-three-cols">
+        
+        <!-- COLUMN 1: EDUCATION -->
+        <div class="col-box">
+            <h2><i class="fa-solid fa-graduation-cap icon"></i> Education</h2>
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Institute</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Comp Engr</td>
+                        <td>OAU, Ile-Ife</td>
+                        <td>2025 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>High School</td>
+                        <td>TSPC College</td>
+                        <td>2019 - 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- COLUMN 2: PROJECTS -->
+        <div class="col-box" id="projects">
+            <h2><i class="fa-solid fa-briefcase icon"></i> Projects</h2>
+            <div class="projects-list">
+                
+                <!-- Project 1: Restaurant Website (Live Link) -->
+                <div class="project-card">
+                    <div class="proj-icon orange"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="proj-info">
+                        <h4>Restaurant Website</h4>
+                        <p>A responsive landing page for a restaurant built with HTML & CSS.</p>
+                    </div>
+                    <a href="https://restaurant-website-zb4j.onrender.com/" target="_blank" class="proj-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2: Personal Portfolio (To be updated later) -->
+                <div class="project-card">
+                    <div class="proj-icon green"><i class="fa-solid fa-globe"></i></div>
+                    <div class="proj-info">
+                        <h4>Personal Portfolio</h4>
+                        <p>A responsive HTML & CSS website.</p>
+                    </div>
+                    <a href="#" class="proj-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3: Application Form (Google Drive PDF Link) -->
+                <div class="project-card">
+                    <div class="proj-icon purple"><i class="fa-solid fa-file-lines"></i></div>
+                    <div class="proj-info">
+                        <h4>Application Form</h4>
+                        <p>An interactive web form for capturing structured user input.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1aryWvwG755ULDob_xxstibfnmxXXfxM_/view?usp=drivesdk" target="_blank" class="proj-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+                
+                    
+
+        <!-- COLUMN 3: CONTACT FORM -->
+        <div class="col-box" id="contact">
+            <h2><i class="fa-solid fa-envelope icon"></i> Contact Me</h2>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Paste your Web3Forms Access Key here -->
+    <input type="hidden" name="access_key" value="86e83585-3c03-4fdf-abb6-fc9cedeed91f">
+
+    <!-- Form Inputs with 'name' attributes required for Web3Forms -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+
+    <!-- Optional: Prevents spam bot submissions -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <button type="submit" class="btn btn-primary form-btn">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+    </button>
+</form>
+        </div>
+
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Nurudeen Ishola | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

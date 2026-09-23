@@ -1,0 +1,458 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #030b1e;
+    color: #ffffff;
+}
+
+/* 1. NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #030b1e;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #0077ff;
+    padding-bottom: 4px;
+}
+
+/* 2. HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8% 80px 8%;
+    background: linear-gradient(180deg, #030b1e 0%, #061539 100%);
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.greeting {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.role {
+    color: #0077ff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+/* BUTTONS */
+.btn-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0077ff;
+    color: #ffffff;
+    border: 2px solid #0077ff;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #030b1e;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0077ff;
+    box-shadow: 0 0 30px rgba(0, 119, 255, 0.3);
+}
+
+/* 3. ABOUT & SKILLS SECTION */
+.about-skills-container {
+    display: flex;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #f8fafc; /* Clean light background for contrast */
+    color: #1e293b;            /* Dark text for the light section */
+}
+
+/* Titles */
+.about-skills-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-skills-container h2 .icon {
+    color: #0077ff;
+}
+
+/* ABOUT ME LEFT COLUMN */
+.about-box {
+    flex: 1;
+}
+
+.about-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-card p {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* SKILLS RIGHT COLUMN */
+.skills-box {
+    flex: 1.2;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 20px 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.skill-icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* Skill Icon Colors */
+.html-icon { color: #e34f26; }
+.css-icon { color: #1572b6; }
+.js-icon { color: #f7df1e; }
+.python-icon { color: #3776ab; }
+
+.skill-card h4 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #1e293b;
+}
+
+.percentage {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #64748b;
+}
+
+/* Progress Bars */
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0077ff;
+    border-radius: 10px;
+}
+
+.fill-html { width: 90%; }
+.fill-css { width: 85%; }
+.fill-js { width: 70%; }
+.fill-python { width: 75%; }
+
+/* 4. THREE-COLUMN SECTION */
+.bottom-three-cols {
+    display: flex;
+    gap: 25px;
+    padding: 20px 8% 60px 8%;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.col-box {
+    flex: 1;
+}
+
+.col-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col-box h2 .icon {
+    color: #0077ff;
+}
+
+/* EDUCATION TABLE */
+.edu-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.edu-table th {
+    background-color: #1e1b4b; /* Deep indigo header */
+    color: #ffffff;
+    padding: 12px 10px;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.edu-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.8rem;
+    color: #475569;
+}
+
+/* PROJECTS LIST */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.proj-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.purple { background-color: #6366f1; }
+.green  { background-color: #10b981; }
+.orange { background-color: #f59e0b; }
+
+.proj-info {
+    flex: 1;
+}
+
+.proj-info h4 {
+    font-size: 0.85rem;
+    color: #0f172a;
+}
+
+.proj-info p {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.proj-link {
+    color: #0077ff;
+    font-size: 0.9rem;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #0077ff;
+}
+
+.form-btn {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* 5. FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #030b1e;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077ff;
+}
+
+@media (max-width: 768px) {
+    .about-skills-container,
+    .bottom-three-cols,
+    .navbar,
+    .hero {
+        flex-direction: column;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    p, ul {
+        max-width: 100%;
+    }
+}
+/* ==========================================================================
+   COOL CSS ENHANCEMENTS (MATCHED TO BLUE PORTFOLIO THEME)
+   ========================================================================== */
+
+/* 1. Gradient Text for your Name */
+.hero-content h1 {
+    background: linear-gradient(90deg, #007bff, #00d2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 2. Glow Button Hover */
+.btn-primary:hover {
+    box-shadow: 0 0 15px #007bff, 0 0 25px rgba(0, 123, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* 3. Glassmorphism + Hover Scale for Project & Skill Cards */
+.project-card, .skill-card, .about-box, .skills-box, .col-box {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Scale Effect */
+.project-card:hover, .skill-card:hover {
+    transform: scale(1.03) translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+/* 4. Smooth Image Hover Zoom */
+.hero-image img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.8);
+}
