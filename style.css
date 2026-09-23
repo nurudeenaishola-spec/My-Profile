@@ -456,3 +456,40 @@ body {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 123, 255, 0.8);
 }
+/* FIX HORIZONTAL OVERFLOW & SCROLLING ON MOBILE */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Fix education table pushing width */
+.edu-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Fix section container paddings on mobile */
+@media (max-width: 768px) {
+    .navbar, .hero, .about-skills-container, .bottom-three-cols, .footer {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+@media (max-width: 768px) {
+    /* Allow nav links to wrap cleanly on mobile */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px; /* Compact spacing between links */
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem; /* Slightly smaller text for mobile header */
+    }
+}
